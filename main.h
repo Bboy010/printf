@@ -1,4 +1,4 @@
-fndef MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 
 #include <stdio.h>
@@ -11,11 +11,10 @@ fndef MAIN_H
 #define NUL '\0'
 
 /**
- *  * struct convert - defines a structure for symbols and functions
- *   *
- *    * @sym: The operator
- *     * @f: The function associated
- *      */
+ * struct convert - defines a structure for symbols and functions
+ * @sym: The operator
+ * @f: The function associated
+ */
 
 struct convert
 {
@@ -53,4 +52,5 @@ int print_hex_aux(unsigned long int num);
 int isNonAlphaNumeric(char c); 
 int _puts(char *str);
 char *convert(unsigned long int num, int base, int lowercase);
+
 #endif
